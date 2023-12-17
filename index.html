@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagem com Coração</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .message {
+      font-size: 24px;
+      text-align: center;
+      line-height: 1.5;
+      letter-spacing: 3px;
+    }
+
+    .sparkle {
+      display: inline-block;
+      animation: sparkleAnimation 1s infinite alternate;
+    }
+
+    @keyframes sparkleAnimation {
+      from {
+        opacity: 0.5;
+        transform: translateY(0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(-5px);
+      }
+    }
+
+    .heart {
+      color: #E74C3C;
+      /* Vermelho */
+      margin-top: 10px;
+      font-size: 40px;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="message">
+    <span class="sparkle">T</span>e
+    <span class="sparkle"> </span>a
+    <span class="sparkle">m</span>o
+    <span class="sparkle"> </span>m
+    <span class="sparkle">e</span>u
+    <span class="sparkle"> </span>a
+    <span class="sparkle">m</span>o
+    <span class="sparkle">r</span>
+  </div>
+
+  <div class="heart">&#10084;</div>
+</body>
+
+</html>
